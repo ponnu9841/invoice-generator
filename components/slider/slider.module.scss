@@ -1,0 +1,14 @@
+.grid {
+	display: grid;
+	grid-template-columns: auto 0fr 1fr;
+	overflow: hidden;
+	align-items: center;
+	transition: grid-template-columns 200ms;
+	max-height: fit-content;
+	> div {
+		overflow: hidden;
+	}
+}
+.grid.open {
+	grid-template-columns: auto 1fr 1fr;
+}

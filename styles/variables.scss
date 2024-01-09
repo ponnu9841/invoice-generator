@@ -1,0 +1,13 @@
+// $light: lighten(#471849, 77%);
+// $primary: #32154d;
+// $success: #471849;
+// $dark: #32154d;
+$primary: #0d6efd;
+$success: #198754;
+$dark: #212529;
+$light: lighten($success, 77%);
+$input-focus-box-shadow: none;
+$form-select-focus-box-shadow: none;
+$input-border-radius: 4px;
+$input-focus-border-color: $success;
+$border-radius: 4px;

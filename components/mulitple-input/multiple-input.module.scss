@@ -1,0 +1,89 @@
+.header{
+  width: calc(100% - 20px);
+  float: left;
+}
+.inputDesc{
+    width: calc(70% - 40px);
+    display: inline-block;
+    margin-right: 5px;
+    font-size: 14px;
+}
+.value{
+    width: 10%;
+    display: inline-block;
+    margin-right: 5px;
+    font-size: 14px;
+    padding-left: 14px;
+}
+
+.rate{
+  @extend .value;
+  padding-left: 2rem;
+  position: relative;
+}
+.currency{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 10px;
+}
+
+/* Chrome, Safari, Edge, Opera */
+.rate::-webkit-outer-spin-button,
+.rate::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+.rate[type=number] {
+  -moz-appearance: textfield;
+}
+
+.addButton{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 14px;
+  svg{
+    font-size: 14px;
+    fill: white!important;
+    color: #fff;
+  }
+}
+
+.deleteButton{
+  background: transparent;
+  border: none;
+  display: none;
+  padding: 0;
+  font-size: 20px;
+  svg{
+    color: rgba(#000, 0.1);
+    fill: rgba(#000, 0.1);
+  }
+  // font-size: 14px;
+}
+
+.input-wrapper:hover .deleteButton{
+  display: inline-block;
+}
+
+.inputWrapper{
+  width: calc(100% - 20px);
+  font-size: 14px;
+}
+
+.deleteBtn{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -30px;
+  padding: 0;
+  font-size: 16px;
+  background: #fff;
+  border: none;
+  // inset: 0;
+  // margin: auto;
+  // right: -20px;
+}

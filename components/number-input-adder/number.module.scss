@@ -1,0 +1,35 @@
+.inputHeading {
+  border: 1px solid #fff !important;
+  &:focus {
+    border: 1px solid #ced4da !important;
+  }
+}
+
+.text {
+  font-size: 14px;
+}
+
+.form-input-sm2 {
+  width: 175px;
+  float: right;
+}
+
+.dateInput {
+  position: relative;
+}
+
+.deleteButton {
+  position: absolute;
+  top: 0;
+  right: -25px;
+  background: transparent;
+  border: none;
+//   display: none;
+  padding: 0;
+  font-size: 20px;
+  svg {
+    // color: rgba(#000, 0.1);
+    // fill: rgba(#000, 0.1);
+  }
+  // font-size: 14px;
+}

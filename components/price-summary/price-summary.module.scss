@@ -1,0 +1,47 @@
+.input-wrapper {
+  position: relative;
+  input {
+    width: 175px;
+  }
+}
+
+.text {
+  font-size: 14px;
+}
+
+.input{
+    position: relative;
+    input{
+        width: 150px;
+        padding-right: 43px;
+        text-align: right;
+    }
+    span,.toggler{
+        position: absolute;
+        right: 25px;
+        top: 50%;
+        transform: translateY(-50%);
+        font-weight: 500;
+    }
+    .resetButton, button{
+        padding: 0;
+        margin: 0;
+        position: absolute;
+        right: 5px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .deleteBtn{
+        right: -25px;
+        font-size: 20px;
+    }
+}
+
+.inputField{
+  border: 1px solid #fff !important;
+  &:focus {
+    border: 1px solid #ced4da !important;
+  }
+}
+
