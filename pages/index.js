@@ -16,6 +16,7 @@ export default function Home() {
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 			<main className={` ${inter.className} m-3 m-lg-5`}>
+				<h2 className="text-uppercase">Invoice Generator</h2>
 				<InvoiceForm />
 			</main>
 		</>
