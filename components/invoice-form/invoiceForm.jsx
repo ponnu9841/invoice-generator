@@ -656,11 +656,13 @@ export default function InvoiceForm() {
 									if (symbol == "false") {
 										symbol = JSON.parse(item?.currency?.symbol);
 									}
-									return (
-										<option value={item?.currency?.symbol} key={index}>
-											{`${item?.currency?.code} ${symbol && symbol}`}
-										</option>
-									);
+									if (item?.currency?.code) {
+										return (
+											<option value={item?.currency?.symbol} key={index}>
+												{`${item?.currency?.code} ${symbol && symbol}`}
+											</option>
+										);
+									}
 								})}
 							</select>
 						</div>
